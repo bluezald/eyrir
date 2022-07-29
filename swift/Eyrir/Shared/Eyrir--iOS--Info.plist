@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Config</key>
+	<dict>
+		<key>RAPID_API_CC-KEY</key>
+		<string>$($(RAPID_API_CC-KEY)</string>
+		<key>RAPID_API_CC-HOST</key>
+		<string>$(RAPID_API_CC-HOST)</string>
+		<key>RAPID_API_CC-BASE_URL</key>
+		<string>$(RAPID_API_CC-BASE_URL)</string>
+	</dict>
+</dict>
+</plist>
