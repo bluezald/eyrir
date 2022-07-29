@@ -17,6 +17,9 @@
 		D618E8EE28169EFC004265F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D618E8C428169EFA004265F9 /* ContentView.swift */; };
 		D618E8EF28169EFC004265F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D618E8C528169EFC004265F9 /* Assets.xcassets */; };
 		D618E8F028169EFC004265F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D618E8C528169EFC004265F9 /* Assets.xcassets */; };
+		D665E3E5289365AC0028C96E /* CurrencyConverterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D665E3E4289365AC0028C96E /* CurrencyConverterProtocol.swift */; };
+		D665E3E72893694F0028C96E /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D665E3E62893694F0028C96E /* CurrencyConverter.swift */; };
+		D665E3EC28936E210028C96E /* RapidApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D665E3EB28936E210028C96E /* RapidApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		D618E8E328169EFC004265F9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D618E8E728169EFC004265F9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D618E8E928169EFC004265F9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		D665E3E4289365AC0028C96E /* CurrencyConverterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterProtocol.swift; sourceTree = "<group>"; };
+		D665E3E62893694F0028C96E /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		D665E3E928936A1A0028C96E /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
+		D665E3EA28936BE10028C96E /* Eyrir--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eyrir--iOS--Info.plist"; sourceTree = "<group>"; };
+		D665E3EB28936E210028C96E /* RapidApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,9 @@
 		D618E8C228169EFA004265F9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D665E3EA28936BE10028C96E /* Eyrir--iOS--Info.plist */,
+				D665E3E8289369B50028C96E /* Environments */,
+				D665E3E3289365760028C96E /* API */,
 				D618E8C328169EFA004265F9 /* EyrirApp.swift */,
 				D618E8C428169EFA004265F9 /* ContentView.swift */,
 				D618E8C528169EFC004265F9 /* Assets.xcassets */,
@@ -139,6 +150,24 @@
 				D618E8E928169EFC004265F9 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		D665E3E3289365760028C96E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D665E3E4289365AC0028C96E /* CurrencyConverterProtocol.swift */,
+				D665E3E62893694F0028C96E /* CurrencyConverter.swift */,
+				D665E3EB28936E210028C96E /* RapidApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D665E3E8289369B50028C96E /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				D665E3E928936A1A0028C96E /* Develop.xcconfig */,
+			);
+			path = Environments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D665E3E5289365AC0028C96E /* CurrencyConverterProtocol.swift in Sources */,
+				D665E3EC28936E210028C96E /* RapidApi.swift in Sources */,
+				D665E3E72893694F0028C96E /* CurrencyConverter.swift in Sources */,
 				D618E8ED28169EFC004265F9 /* ContentView.swift in Sources */,
 				D618E8EB28169EFC004265F9 /* EyrirApp.swift in Sources */,
 			);
@@ -467,6 +499,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eyrir--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -496,6 +529,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eyrir--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -75,6 +75,10 @@ struct ContentView: View {
         }
       }
     }
+    .onAppear {
+      let converter = CurrencyConverter()
+      _ = converter.getAvailableCurrencies()
+    }
   }
 }
 

@@ -1,0 +1,16 @@
+//
+//  Develop.xcconfig
+//  Eyrir
+//
+//  Created by Vincent Bacalso on 7/29/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+RAPID_API_CC-BASE_URL = https:/$()/currencyconverter.p.rapidapi.com
+RAPID_API_CC-KEY = test
+RAPID_API_CC-HOST = currencyconverter.p.rapidapi.com
+
+TARGET_NAME = Eyrir (Dev)
+PRODUCT_BUNDLE_IDENTIFIER = com.bluezald.eyrir.dev
